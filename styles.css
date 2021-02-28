@@ -19,7 +19,7 @@ body{
     line-height: 1.6;
 }
 img{
-    width: 100%;
+    width: auto;
     display: block;
 }
 ul li{
@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 .header{
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/header.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://github.com/prabinmagar/photography-site/blob/master/images/header.jpg?raw=true") center/cover no-repeat;
     color: #fff;
 }
 .top-nav a{
@@ -228,7 +228,7 @@ blockquote span{
 }
 .sec-one-left{
     height: 100vh;
-    background: url("images/project-main.jpg") center/cover no-repeat;
+    background: url("./assets/profile2.png") center/cover no-repeat;
     box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
@@ -266,14 +266,15 @@ blockquote span{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
+    height: 200px;
 }
 .work-img-1{
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("images/porject-1.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("./assets/ocean.png") center/cover no-repeat;
     height: 400px;
     transition: var(--transition);
 }
 .work-img-2{
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("images/porject-2.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("./assets/fog.png")  center/cover no-repeat;
     height: 400px;
     transition: var(--transition);
 }
@@ -332,9 +333,12 @@ blockquote span{
 .section-three{
     margin: 40px 0;
 }
+
 .single-img{
     position: relative;
     margin: 10px;
+    max-width: min-content;
+    max-height: min-content;
 }
 .single-img-content{
     position: absolute;
