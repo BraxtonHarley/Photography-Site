@@ -21,6 +21,7 @@ body{
 img{
     width: auto;
     display: block;
+    
 }
 ul li{
     list-style: none;
@@ -44,27 +45,27 @@ h1, h2, h3, h4, h5, h6, p{
     margin: 0 auto;
 }
 .btn{
-    background: var(--darkGreen);
+    background: whitesmoke;
     border: none;
     display: block;
     width: 150px;
     text-align: center;
-    color: var(--darkGreen);
+    color: goldenrod;
     text-transform: uppercase;
     background: transparent;
     font-size: 15px;
     padding: 12px;
-    border: 2px solid var(--darkGreen);
+    border: 2px solid goldenrod;
     border-radius: 25px;
     margin: 15px 0;
     transition: var(--transition);
 }
 .btn:hover{
-    background: var(--darkGreen);
+    background: goldenrod;
     color: #fff;
 }
 .active{
-    color: var(--lightGreen)!important;
+    color: goldenrod!important;
 }
 
 /**************** end of Utility Classes *******************/
@@ -73,7 +74,10 @@ h1, h2, h3, h4, h5, h6, p{
 
 .header{
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://github.com/prabinmagar/photography-site/blob/master/images/header.jpg?raw=true") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+     url("./assets/img/yellowtree.png") center/cover no-repeat;
+     width: 100%;
+     height: auto;
     color: #fff;
 }
 .top-nav a{
@@ -94,6 +98,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .brand-name{
     letter-spacing: 5px;
+    margin-top: 50px;
     cursor: pointer;
 }
 .navBtn{
@@ -131,7 +136,7 @@ h1, h2, h3, h4, h5, h6, p{
 .top-nav ul a::after{
     content: "";
     height: 2px;
-    background: var(--lightGreen);
+    background: goldenrod;
     position: absolute;
     bottom: -5px;
     left: 50%;
@@ -161,7 +166,7 @@ h1, h2, h3, h4, h5, h6, p{
     font-size: 48px;
     text-align: center;
     margin-bottom: 35px;
-    color: var(--lightGreen);
+    color: goldenrod;
 }
 .about-content h3{
     color: #fff;
@@ -183,7 +188,7 @@ blockquote{
 blockquote span{
     font-size: 14px;
     text-transform: uppercase;
-    color: var(--darkGreen);
+    color: darkgoldenrod;
     font-weight: 300;
     letter-spacing: 5px;
     display: block;
@@ -211,8 +216,8 @@ blockquote span{
     justify-content: space-around;
 }
 .social-icons ul a:hover{
-    background: var(--lightGreen);
-    border-color: var(--lightGreen);
+    background: goldenrod;
+    border-color: goldenrod;
 }
 
 /********************* End of Header ***********************/
@@ -228,10 +233,13 @@ blockquote span{
 }
 .sec-one-left{
     height: 100vh;
-    background: url("./assets/profile2.png") center/cover no-repeat;
-    box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+    background: url("./assets/img/road.png")  no-repeat;
+    box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
 }
 .sec-one-left div{
     color: #fff;
@@ -263,10 +271,12 @@ blockquote span{
     margin: 50px 0;
 }
 .work-imgs{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
+    display: flex;
+    justify-content: space-around;
     height: 200px;
+    margin-bottom: 20px;
+    z-index: 1;
+    
 }
 .work-img-1{
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("./assets/ocean.png") center/cover no-repeat;
@@ -287,7 +297,8 @@ blockquote span{
 
 /* section two */
 .section-two{
-    margin: 40px 0;
+    display: flex;
+    justify-content: space-around;
 }
 .section-two h2{
     text-align: center;
@@ -300,12 +311,16 @@ blockquote span{
     font-size: 20px;
     margin-bottom: 30px;
 }
+
 .insta-imgs{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+ display: flex;
+ justify-content: space-around;
+ padding: 15px;
+ 
 }
 .insta-imgs > div{
     position: relative;
+    height: 100%;
 }
 .icon-overlay{
     position: absolute;
@@ -315,15 +330,24 @@ blockquote span{
     width: 100%;
     height: 100%;
     font-size: 50px;
-    background: rgba(134, 194, 50, 0.4);
+    background: gold;
     opacity: 0;
     transition: var(--transition);
 }
 .insta-imgs > div:hover .icon-overlay{
-    opacity: 1;
+    opacity: .60;
 }
 
 /************* end of index.html ***********/
+
+
+
+
+
+
+
+
+
 
 
 
@@ -331,7 +355,14 @@ blockquote span{
 
 /* section three */
 .section-three{
-    margin: 40px 0;
+   
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-left: -100px;
+    
 }
 
 .single-img{
@@ -356,6 +387,14 @@ blockquote span{
 }
 
 /************** end of gallery.html ***********/
+
+
+
+
+
+
+
+
 
 
 
@@ -473,7 +512,7 @@ blockquote span{
     margin: 40px 0;
 }
 .footer-container h2{
-    color: var(--lightGreen);
+    color: goldenrod;
     font-size: 36px;
     font-weight: 500;
     letter-spacing: 7px;
@@ -508,7 +547,7 @@ blockquote span{
     font-size: 16px;
     padding: 15px 0;
     font-weight: bold;
-    background: var(--lightGreen);
+    background: goldenrod;
     border: none;
     transition: var(--transition);
     cursor: pointer;
